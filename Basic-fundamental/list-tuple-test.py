@@ -150,3 +150,30 @@ print("Tuple as dictionary key:", locations[(40.7, -74.0)])
 # {[40.7, -74.0]: "New York"}  # TypeError: lists are unhashable
 
 
+#Difference between List VS Set VS Tuple
+print("List VS Set VS Tuple")
+#List
+list1 = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10]
+print("List:", list1)
+print("List Length:", len(list1))
+#Set
+set1 = {1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10}
+print("Set:", set1)
+print("Set Length:", len(set1))
+#Tuple
+tuple1 = (1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10)
+print("Tuple:", tuple1)
+print("Tuple Length:", len(tuple1))
+
+## mutability
+print("Mutability of List VS Set VS Tuple")
+#List
+list1[0] = 100
+print("List after change:", list1)
+#Set
+set1.add(11)
+print("Set after change:", set1)
+#Tuple
+# tuple1[0] = 100  # TypeError: 'tuple' object does not support item assignment
+print("Tuple after change:", tuple1)    
+
